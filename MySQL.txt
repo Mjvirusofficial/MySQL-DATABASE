@@ -1,0 +1,80 @@
+Starting Database 21 March 2022
+MySQL Commands in Mj Style____#
+
+*show databases;
+*create database mj;
+*use mj;
+*create table students(name varchar(10), age int);
+
+*show tables;
+*describe tables;
+*insert into students values("DEEPAK", 18);
+*select * from students;
+
+*alter table students add city varchar(10);
+*select distinct name from table name;  
+*select distinct name,age<19 from table name;  
+*select count(name) from table name; 
+*select count(name&age&city) from frnds;
+*select count(name) as frnds_nane from frnds; = eliash name
+
+*select sum(age) as frnds_nane from frnds; = salary or nmbrs ko jodny k liye.
+*select name from table name;
+*select*from frnds where age<19;
+*select*from tab where city in('koderma','ranchi');
+___________________________________________________
+SOME EASY & USEFULL COMMAND
+*select (10+10) as addition;
+*select (10*10) as multi;
+*select (10-10) as sub;
+*select repeat('mj',10); = for looping
+*select curdate(); = for date
+*select now(); = for current date & tym
+
+*select length('mjvirus'); = for length
+*select upper('mjvirus');
+*select lower('MJVIRUS');
+*select ucase('mjvirus');
+*select lcase('mjvirus');
+
+*select concat("Mjvirus", " is"," a"," youtuber");
+*select concat("Mjvirus", " is"," a"," youtuber")as About_Deepak;
+*select reverse('Mjvirus);
+
+*select name,length(name) as name_length from tab;
+*select reverse(name) as student_name from tab;
+*select ltrim("       mjvirus       ");
+*select position("Virus" in "Mj is a Virus");
+*select ascii("Mjvirus");
+
+|| KEYS ||
+
+*Primary key ia unique & not null key.
+*PRIMARY KEY = UNIQUE + NOT NULL.
+
+The PRIMARY KEY constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain the NULL values.
+
+for e.g = roll no, registeration no etc;
+
+it contain only one unique value in each record. means, 
+
+there are only one primary in each record.
+
+2.Foreign key:-
+it is attribute or set of atttibutes.
+it ia a refrencing table that take refrence from primary key.
+
+*create table l (id int primary key auto_increment ,name varchar(12));
+*insert into l(name) values('deepak'),('rahul');
+*select*from cricket as c inner join football as f on c.name=f.name;
+
+*For password changing alter user 'root'@'localhost' identified by 'your password';
+
+
+                                                                 
+
+
+
+
+                                                                               Thank you...!
+                                                                               It's mjvirusofficial
